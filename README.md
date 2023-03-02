@@ -140,6 +140,6 @@ Let's list some rules that represent better the dynamic between the pillars outl
 - The **app/tree** folder imports only from the **app/domain** and **domain/models** folders.
   Here is a visualization.
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![architecture](https://github.com/loromagnoni/architecture-proposal/blob/main/archietcture.png?raw=true)
 
 You can find a generable one in the ` dependencygraph.svg` file, create one new with `yarn architecture`.
