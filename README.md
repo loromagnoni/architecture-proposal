@@ -2,6 +2,32 @@
 
 The aim of this repository is to showcase a potential way to build scalable web applications. From a high level point of view, elements are divided between domain logic and app specific ones. A more detailed description follows.
 
+## How to install
+
+Clone the repo
+
+```
+git clone git@github.com:loromagnoni/architecture-proposal.git
+```
+
+Install packages
+
+```
+yarn install
+```
+
+Start the application
+
+```
+yarn start
+```
+
+Run test
+
+```
+yarn test
+```
+
 ## About the project
 
 The application is a visualizer of financial information in the form of a candlestick chart. The user can choose between multiple assets, change the timeframe, change the date. It is also possible to start a replay, which will make the chart move as it did in the past. The user can also change the speed at which the simulation is replaying.
