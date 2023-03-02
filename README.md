@@ -16,7 +16,7 @@ Install packages
 yarn install
 ```
 
-Start the application
+Start the application ( disclaimer, the first startup is annoingly slow, let's migrate to Vite )
 
 ```
 yarn start
