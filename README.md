@@ -166,7 +166,7 @@ Let's list some rules that represent better the dynamic between the pillars outl
 - The **app/tree** folder imports only from the **app/domain** and **domain/models** folders.
   Here is a visualization.
 
-![architecture](https://github.com/loromagnoni/architecture-proposal/blob/main/archietcture.png?raw=true)
+![architecture](https://github.com/loromagnoni/architecture-proposal/blob/main/docs/architecture.png?raw=true)
 
 You can find a generable one in the `dependencygraph.svg` file, create one new with `yarn architecture`.
 
@@ -185,6 +185,6 @@ Taking as reference a general login feature. From a high level POV, we can defin
 3. a request is sent to the back-end that checks credentials, if they are correct, a token is returned
 4. once the token is received by the client, a request is made to the back-end to retrieve the user.
 
-![login_example](https://github.com/loromagnoni/architecture-proposal/blob/main/login_example.png?raw=true)
+![login_example](https://github.com/loromagnoni/architecture-proposal/blob/main/docs/login_example.png?raw=true)
 
 The dependencies definition is omitted for brevity, checking the could should be straightforward to understand how they could appear.
