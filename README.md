@@ -168,4 +168,23 @@ Let's list some rules that represent better the dynamic between the pillars outl
 
 ![architecture](https://github.com/loromagnoni/architecture-proposal/blob/main/archietcture.png?raw=true)
 
-You can find a generable one in the ` dependencygraph.svg` file, create one new with `yarn architecture`.
+You can find a generable one in the `dependencygraph.svg` file, create one new with `yarn architecture`.
+
+### Current issues!
+
+The current implementation of the architecture is not perfect. In fact due to the nature of the hooks that act as domain adapters, inside the folder **app/domain**, it can happen that the state values during a use case execution are now updated.
+A solution for this is to pass to the use case the state _as reference_.
+
+### A quick example.
+
+Let's see how a potential feature can be implemented using this set of rules.
+Taking as reference a general login feature. From a high level POV, we can define it as:
+
+1. the user insert email and password
+2. click the login button
+3. a request is sent to the back-end that checks credentials, if they are correct, a token is returned
+4. once the token is received by the client, a request is made to the back-end to retrieve the user.
+
+![login_example](https://github.com/loromagnoni/architecture-proposal/blob/main/login_example.png?raw=true)
+
+The dependencies definition is omitted for brevity, checking the could should be straightforward to understand how they could appear.
