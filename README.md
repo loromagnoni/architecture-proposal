@@ -111,7 +111,7 @@ app/
 
 Inside the **app** folder we can find
 
-- The domain adapters inside the **app/domain** folder. There are elements that enable to use the abstract use cases with the concrete dependencies, connecting them with the state of the application. In this case, being a React application, they are hooks wrapping use cases functions. NOTE: this logic is extremely trivial, at the point that it could be possible to easily generate all the content of this folder automatically!
+- The domain adapters inside the **app/domain** folder. These are elements that enable to use the abstract use cases with the concrete dependencies, connecting them with the state of the application. In this case, being a React application, they are hooks wrapping use cases functions. NOTE: this logic is extremely trivial, at the point that it could be possible to easily generate all the content of this folder automatically!
 - The elements available in the render tree under the **app/tree** folder. Here is possible to navigate the elements as they appear inside the render tree. In this way is super clear which will be the runtime structure of the application, and what the user will see even before launching it.
 - The injector of concrete dependencies defined in **app/dependencies**, in React environment the dependency context and provider definition.
 
