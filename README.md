@@ -172,7 +172,7 @@ You can find a generable one in the `dependencygraph.svg` file, create one new w
 
 ### Current issues!
 
-The current implementation of the architecture is not perfect. In fact due to the nature of the hooks that act as domain adapters, inside the folder **app/domain**, it can happen that the state values during a use case execution are now updated.
+The current implementation of the architecture is not perfect. In fact due to the nature of the hooks that act as domain adapters, inside the folder **app/domain**, it can happen that the state values during a use case execution are **not updated**.
 A solution for this is to pass to the use case the state _as reference_.
 
 ### A quick example.
@@ -187,4 +187,4 @@ Taking as reference a general login feature. From a high level POV, we can defin
 
 ![login_example](https://github.com/loromagnoni/architecture-proposal/blob/main/docs/login_example.png?raw=true)
 
-The dependencies definition is omitted for brevity, checking the could should be straightforward to understand how they could appear.
+The dependencies definition is omitted for brevity, checking the code should be straightforward to understand how they could appear.
