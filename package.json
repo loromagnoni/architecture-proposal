@@ -33,7 +33,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --transformIgnorePatterns \"src/core/(?!lightweight-chart)/\"",
+    "test": "react-scripts test --watchAll=false --transformIgnorePatterns \"src/dependencies/managers/chartManager/(?!lightweight-chart)/\"",
     "eject": "react-scripts eject",
     "lint": "eslint --fix . && prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "architecture": "depcruise --include-only \"^src\" --output-type dot src | dot -T svg > dependencygraph.svg"
